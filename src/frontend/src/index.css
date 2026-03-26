@@ -6,38 +6,38 @@
   :root {
     --radius: 1rem;
     /* Dark theme only */
-    --background: 0.13 0.02 265;
-    --foreground: 0.93 0.02 265;
-    --card: 0.17 0.018 265;
-    --card-foreground: 0.93 0.02 265;
-    --popover: 0.17 0.018 265;
-    --popover-foreground: 0.93 0.02 265;
-    --primary: 0.55 0.2 265;
+    --background: 0.1 0.02 145;
+    --foreground: 0.93 0.02 145;
+    --card: 0.14 0.018 145;
+    --card-foreground: 0.93 0.02 145;
+    --popover: 0.14 0.018 145;
+    --popover-foreground: 0.93 0.02 145;
+    --primary: 0.55 0.2 145;
     --primary-foreground: 0.98 0 0;
-    --secondary: 0.22 0.025 265;
-    --secondary-foreground: 0.93 0.02 265;
-    --muted: 0.22 0.025 265;
-    --muted-foreground: 0.72 0.03 265;
-    --accent: 0.78 0.13 220;
-    --accent-foreground: 0.1 0.01 265;
+    --secondary: 0.19 0.025 145;
+    --secondary-foreground: 0.93 0.02 145;
+    --muted: 0.19 0.025 145;
+    --muted-foreground: 0.72 0.03 145;
+    --accent: 0.75 0.18 145;
+    --accent-foreground: 0.1 0.01 145;
     --destructive: 0.577 0.245 27.325;
     --destructive-foreground: 0.985 0 0;
-    --border: 0.93 0.02 265 / 8%;
-    --input: 0.93 0.02 265 / 12%;
-    --ring: 0.55 0.2 265;
-    --chart-1: 0.78 0.13 220;
-    --chart-2: 0.55 0.2 265;
-    --chart-3: 0.5 0.22 290;
-    --chart-4: 0.6 0.24 310;
-    --chart-5: 0.65 0.18 180;
-    --sidebar: 0.17 0.018 265;
-    --sidebar-foreground: 0.93 0.02 265;
-    --sidebar-primary: 0.55 0.2 265;
+    --border: 0.93 0.02 145 / 8%;
+    --input: 0.93 0.02 145 / 12%;
+    --ring: 0.55 0.2 145;
+    --chart-1: 0.75 0.18 145;
+    --chart-2: 0.55 0.2 145;
+    --chart-3: 0.6 0.22 160;
+    --chart-4: 0.65 0.22 130;
+    --chart-5: 0.7 0.16 110;
+    --sidebar: 0.14 0.018 145;
+    --sidebar-foreground: 0.93 0.02 145;
+    --sidebar-primary: 0.55 0.2 145;
     --sidebar-primary-foreground: 0.985 0 0;
-    --sidebar-accent: 0.22 0.025 265;
-    --sidebar-accent-foreground: 0.93 0.02 265;
-    --sidebar-border: 0.93 0.02 265 / 8%;
-    --sidebar-ring: 0.55 0.2 265;
+    --sidebar-accent: 0.19 0.025 145;
+    --sidebar-accent-foreground: 0.93 0.02 145;
+    --sidebar-border: 0.93 0.02 145 / 8%;
+    --sidebar-ring: 0.55 0.2 145;
   }
 
   * {
@@ -58,7 +58,7 @@
 
 @layer utilities {
   .gradient-text {
-    background: linear-gradient(90deg, #41c8ff, #4c6fff, #7a4dff, #d84bff);
+    background: linear-gradient(90deg, #22c55e, #4ade80, #86efac, #a3e635);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -76,7 +76,7 @@
     inset: 0;
     border-radius: inherit;
     padding: 1px;
-    background: linear-gradient(135deg, #41c8ff, #4c6fff, #7a4dff, #d84bff);
+    background: linear-gradient(135deg, #22c55e, #4ade80, #16a34a, #84cc16);
     -webkit-mask: linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
@@ -85,7 +85,7 @@
   }
 
   .btn-gradient {
-    background: linear-gradient(135deg, #4c6fff, #7a4dff, #d84bff);
+    background: linear-gradient(135deg, #16a34a, #22c55e, #4ade80);
     transition: opacity 0.2s, transform 0.2s;
   }
 
@@ -95,10 +95,10 @@
   }
 
   .card-glow:hover {
-    box-shadow: 0 0 30px rgba(76, 111, 255, 0.25), 0 0 60px
-      rgba(122, 77, 255, 0.15);
+    box-shadow: 0 0 30px rgba(34, 197, 94, 0.25), 0 0 60px
+      rgba(74, 222, 128, 0.15);
     transform: translateY(-6px);
-    border-color: rgba(76, 111, 255, 0.4);
+    border-color: rgba(34, 197, 94, 0.4);
   }
 
   .fade-in {
@@ -286,7 +286,7 @@
 }
 
 .announcement-bar {
-  background: linear-gradient(90deg, #41c8ff, #4c6fff, #7a4dff, #d84bff);
+  background: linear-gradient(90deg, #22c55e, #4ade80, #16a34a, #84cc16);
   background-size: 200% 200%;
   animation: gradient-shift 4s ease infinite;
 }
@@ -294,17 +294,17 @@
 .hero-mesh {
   background: radial-gradient(
       ellipse at 70% 50%,
-      rgba(76, 111, 255, 0.15) 0%,
+      rgba(34, 197, 94, 0.15) 0%,
       transparent 60%
     ),
     radial-gradient(
       ellipse at 30% 80%,
-      rgba(122, 77, 255, 0.12) 0%,
+      rgba(74, 222, 128, 0.12) 0%,
       transparent 50%
     ),
     radial-gradient(
       ellipse at 80% 20%,
-      rgba(65, 200, 255, 0.1) 0%,
+      rgba(163, 230, 53, 0.1) 0%,
       transparent 40%
     );
 }

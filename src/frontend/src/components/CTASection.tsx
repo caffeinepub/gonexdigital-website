@@ -13,10 +13,10 @@ export default function CTASection() {
         className={`max-w-5xl mx-auto rounded-3xl p-16 text-center relative overflow-hidden fade-in ${isInView ? "visible" : ""}`}
         style={{
           background:
-            "linear-gradient(135deg, rgba(76,111,255,0.15) 0%, rgba(122,77,255,0.2) 50%, rgba(216,75,255,0.15) 100%), #111827",
-          border: "1px solid rgba(76,111,255,0.2)",
+            "linear-gradient(135deg, rgba(34,197,94,0.15) 0%, rgba(22,163,74,0.2) 50%, rgba(74,222,128,0.15) 100%), #111827",
+          border: "1px solid rgba(34,197,94,0.2)",
           boxShadow:
-            "0 0 80px rgba(76,111,255,0.1), 0 0 160px rgba(122,77,255,0.08)",
+            "0 0 80px rgba(34,197,94,0.1), 0 0 160px rgba(22,163,74,0.08)",
         }}
       >
         {/* Background blobs */}
@@ -24,7 +24,7 @@ export default function CTASection() {
           <div
             className="absolute w-96 h-96 rounded-full opacity-10"
             style={{
-              background: "radial-gradient(circle, #4C6FFF, transparent)",
+              background: "radial-gradient(circle, #22C55E, transparent)",
               top: "-100px",
               left: "-50px",
             }}
@@ -32,7 +32,7 @@ export default function CTASection() {
           <div
             className="absolute w-80 h-80 rounded-full opacity-10"
             style={{
-              background: "radial-gradient(circle, #D84BFF, transparent)",
+              background: "radial-gradient(circle, #4ADE80, transparent)",
               bottom: "-80px",
               right: "-40px",
             }}

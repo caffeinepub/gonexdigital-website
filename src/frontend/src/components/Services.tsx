@@ -1,7 +1,16 @@
 import { useRef } from "react";
 import { useInView } from "../hooks/useInView";
 
-const services = [
+interface Service {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  gradient: string;
+  image?: string;
+  subItems?: string[];
+}
+
+const services: Service[] = [
   {
     icon: (
       <svg
@@ -21,7 +30,8 @@ const services = [
     title: "SEO",
     description:
       "Dominate search rankings with data-driven SEO strategies that drive organic traffic and qualified leads to your business.",
-    gradient: "from-[#41C8FF] to-[#4C6FFF]",
+    gradient: "from-[#4ADE80] to-[#22C55E]",
+    image: "/assets/generated/seo-service.dim_800x500.jpg",
   },
   {
     icon: (
@@ -45,7 +55,8 @@ const services = [
     title: "Ads Marketing",
     description:
       "High-converting paid campaigns across Google, Meta, and more. Every rupee spent delivers measurable ROI.",
-    gradient: "from-[#D84BFF] to-[#7A4DFF]",
+    gradient: "from-[#22C55E] to-[#16A34A]",
+    image: "/assets/generated/digital-marketing-service.dim_800x500.jpg",
   },
   {
     icon: (
@@ -69,7 +80,8 @@ const services = [
     title: "Social Media Management",
     description:
       "Build an engaged community with content that resonates. We handle strategy, creation, and daily management.",
-    gradient: "from-[#4C6FFF] to-[#D84BFF]",
+    gradient: "from-[#4ADE80] to-[#84CC16]",
+    image: "/assets/generated/social-media-gym-engagement.dim_800x600.jpg",
   },
   {
     icon: (
@@ -93,7 +105,8 @@ const services = [
     title: "Web & App Development",
     description:
       "Blazing-fast, pixel-perfect websites and apps built with modern tech. From landing pages to enterprise platforms.",
-    gradient: "from-[#41C8FF] to-[#7A4DFF]",
+    gradient: "from-[#86EFAC] to-[#22C55E]",
+    image: "/assets/generated/responsive-web-design-devices.dim_800x600.jpg",
   },
   {
     icon: (
@@ -117,7 +130,44 @@ const services = [
     title: "Graphic Designing",
     description:
       "Visual identities that leave a lasting impression. Logos, branding, print, and digital design crafted with precision.",
-    gradient: "from-[#7A4DFF] to-[#41C8FF]",
+    gradient: "from-[#16A34A] to-[#4ADE80]",
+    image: "/assets/generated/graphic-design-service.dim_800x500.jpg",
+  },
+  {
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+        aria-hidden="true"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+        />
+      </svg>
+    ),
+    title: "Business Automation & Digital Setup",
+    description: "",
+    gradient: "from-[#4ADE80] to-[#A3E635]",
+    image: "/assets/generated/business-automation-service.dim_800x500.jpg",
+    subItems: [
+      "CRM Setup & Integration",
+      "Lead Management Systems",
+      "WhatsApp & Email Automation",
+      "Sales Funnel Setup",
+      "Analytics & Reporting Dashboard",
+    ],
   },
 ];
 
@@ -126,7 +176,7 @@ const serviceDots = [
     id: "sd1",
     top: "10%",
     left: "8%",
-    color: "#41C8FF",
+    color: "#4ADE80",
     size: 4,
     delay: 0,
     dur: 8,
@@ -135,7 +185,7 @@ const serviceDots = [
     id: "sd2",
     top: "25%",
     left: "92%",
-    color: "#D84BFF",
+    color: "#A3E635",
     size: 3,
     delay: 1.5,
     dur: 11,
@@ -144,7 +194,7 @@ const serviceDots = [
     id: "sd3",
     top: "40%",
     left: "15%",
-    color: "#7A4DFF",
+    color: "#22C55E",
     size: 5,
     delay: 0.7,
     dur: 9,
@@ -153,7 +203,7 @@ const serviceDots = [
     id: "sd4",
     top: "60%",
     left: "80%",
-    color: "#4C6FFF",
+    color: "#16A34A",
     size: 3,
     delay: 2.3,
     dur: 7.5,
@@ -162,7 +212,7 @@ const serviceDots = [
     id: "sd5",
     top: "75%",
     left: "50%",
-    color: "#41C8FF",
+    color: "#4ADE80",
     size: 4,
     delay: 1.0,
     dur: 10,
@@ -171,7 +221,7 @@ const serviceDots = [
     id: "sd6",
     top: "85%",
     left: "25%",
-    color: "#D84BFF",
+    color: "#A3E635",
     size: 3,
     delay: 3.1,
     dur: 8.5,
@@ -180,7 +230,7 @@ const serviceDots = [
     id: "sd7",
     top: "18%",
     left: "60%",
-    color: "#7A4DFF",
+    color: "#22C55E",
     size: 4,
     delay: 0.4,
     dur: 12,
@@ -189,7 +239,7 @@ const serviceDots = [
     id: "sd8",
     top: "50%",
     left: "95%",
-    color: "#41C8FF",
+    color: "#4ADE80",
     size: 2,
     delay: 2.0,
     dur: 9.5,
@@ -198,7 +248,7 @@ const serviceDots = [
     id: "sd9",
     top: "90%",
     left: "70%",
-    color: "#4C6FFF",
+    color: "#16A34A",
     size: 5,
     delay: 1.8,
     dur: 7,
@@ -208,7 +258,7 @@ const serviceDots = [
 const driftOrbs = [
   {
     id: "do1",
-    color: "#41C8FF",
+    color: "#4ADE80",
     size: 200,
     top: "20%",
     left: "5%",
@@ -217,7 +267,7 @@ const driftOrbs = [
   },
   {
     id: "do2",
-    color: "#D84BFF",
+    color: "#A3E635",
     size: 160,
     top: "55%",
     left: "75%",
@@ -226,7 +276,7 @@ const driftOrbs = [
   },
   {
     id: "do3",
-    color: "#4C6FFF",
+    color: "#22C55E",
     size: 240,
     top: "70%",
     left: "35%",
@@ -245,9 +295,7 @@ export default function Services() {
       ref={ref as React.RefObject<HTMLElement>}
       className="py-24 px-6 relative overflow-hidden"
     >
-      {/* Animated background layer */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Drifting ambient orbs */}
         {driftOrbs.map((orb) => (
           <div
             key={orb.id}
@@ -266,8 +314,6 @@ export default function Services() {
             }}
           />
         ))}
-
-        {/* Glowing dots */}
         {serviceDots.map((dot) => (
           <div
             key={dot.id}
@@ -286,8 +332,6 @@ export default function Services() {
             }}
           />
         ))}
-
-        {/* Rotating gradient ring — center-right */}
         <div
           style={{
             position: "absolute",
@@ -298,13 +342,12 @@ export default function Services() {
             marginTop: -300,
             marginLeft: -300,
             borderRadius: "50%",
-            border: "1px solid rgba(76, 111, 255, 0.12)",
+            border: "1px solid rgba(34, 197, 94, 0.12)",
             animation: "rotate-slow 28s linear infinite",
             background:
-              "conic-gradient(from 0deg, rgba(65,200,255,0.08), rgba(122,77,255,0.08), rgba(216,75,255,0.06), rgba(65,200,255,0.08))",
+              "conic-gradient(from 0deg, rgba(74,222,128,0.08), rgba(34,197,94,0.08), rgba(163,230,53,0.06), rgba(74,222,128,0.08))",
           }}
         />
-        {/* Inner ring */}
         <div
           style={{
             position: "absolute",
@@ -315,14 +358,13 @@ export default function Services() {
             marginTop: -200,
             marginLeft: -200,
             borderRadius: "50%",
-            border: "1px solid rgba(122, 77, 255, 0.1)",
+            border: "1px solid rgba(22, 163, 74, 0.1)",
             animation: "rotate-slow 18s linear infinite reverse",
           }}
         />
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10" ref={containerRef}>
-        {/* Header */}
         <div
           className={`text-center mb-16 fade-in ${isInView ? "visible" : ""}`}
         >
@@ -337,7 +379,6 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Cards grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, i) => (
             <div
@@ -348,9 +389,7 @@ export default function Services() {
               }`}
             >
               <div
-                className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br ${
-                  service.gradient
-                } text-white mb-6`}
+                className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br ${service.gradient} text-white mb-6`}
               >
                 {service.icon}
               </div>
@@ -358,25 +397,36 @@ export default function Services() {
               <h3 className="text-white font-bold text-xl mb-3">
                 {service.title}
               </h3>
-              <p className="text-[#A7B2C8] text-sm font-medium leading-relaxed">
-                {service.description}
-              </p>
+
+              {service.description && (
+                <p className="text-[#A7B2C8] text-sm font-medium leading-relaxed">
+                  {service.description}
+                </p>
+              )}
+
+              {service.subItems && service.subItems.length > 0 && (
+                <ul className="mt-2 space-y-1.5">
+                  {service.subItems.map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-center gap-2 text-[#A7B2C8] text-sm font-medium"
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#4ADE80] to-[#22C55E] flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              {service.image && (
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="rounded-xl w-full h-40 object-cover mt-4 opacity-90"
+                />
+              )}
             </div>
           ))}
-
-          {/* Filler card */}
-          <div
-            className={`hidden lg:flex relative bg-gradient-to-br from-[#4C6FFF]/10 to-[#D84BFF]/10 border border-white/[0.08] rounded-2xl p-8 items-center justify-center fade-in fade-in-delay-5 ${
-              isInView ? "visible" : ""
-            }`}
-          >
-            <div className="text-center">
-              <p className="gradient-text font-black text-5xl mb-2">&infin;</p>
-              <p className="text-[#A7B2C8] font-semibold text-sm">
-                Limitless Possibilities
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

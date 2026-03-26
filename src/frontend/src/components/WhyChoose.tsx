@@ -23,7 +23,7 @@ const reasons = [
     title: "Results-Driven",
     description:
       "Every strategy is backed by data. We focus on metrics that actually matter — leads, conversions, and revenue.",
-    color: "#41C8FF",
+    color: "#4ADE80",
   },
   {
     icon: (
@@ -47,7 +47,7 @@ const reasons = [
     title: "Creative Excellence",
     description:
       "We don't do mediocre. Our creative team pushes boundaries to deliver stunning visuals and compelling narratives.",
-    color: "#D84BFF",
+    color: "#A3E635",
   },
   {
     icon: (
@@ -71,7 +71,7 @@ const reasons = [
     title: "On-Time Delivery",
     description:
       "Deadlines are sacred. We plan meticulously and deliver on schedule — every time, without compromising quality.",
-    color: "#4C6FFF",
+    color: "#22C55E",
   },
   {
     icon: (
@@ -95,7 +95,7 @@ const reasons = [
     title: "Client-First Approach",
     description:
       "You're not just a client — you're a partner. We listen, adapt, and stay fully transparent throughout the process.",
-    color: "#7A4DFF",
+    color: "#16A34A",
   },
   {
     icon: (
@@ -119,7 +119,7 @@ const reasons = [
     title: "Transparent Pricing",
     description:
       "No hidden fees, no surprises. Clear packages and honest quotes so you can plan with confidence.",
-    color: "#41C8FF",
+    color: "#4ADE80",
   },
   {
     icon: (
@@ -143,7 +143,7 @@ const reasons = [
     title: "Full-Service Agency",
     description:
       "From branding to development to marketing — one team, one vision, complete digital transformation.",
-    color: "#D84BFF",
+    color: "#A3E635",
   },
 ];
 
@@ -158,17 +158,17 @@ const stars = [
   { id: "s8", top: "55%", left: "40%", size: 2, delay: 2.8, dur: 3.4, ci: 1 },
 ];
 
-const STAR_COLORS = ["#41C8FF", "#D84BFF", "#7A4DFF"] as const;
+const STAR_COLORS = ["#4ADE80", "#A3E635", "#22C55E"] as const;
 const STAR_GLOWS = [
-  "0 0 8px #41C8FF, 0 0 16px #41C8FF66",
-  "0 0 8px #D84BFF, 0 0 16px #D84BFF66",
-  "0 0 8px #7A4DFF, 0 0 16px #7A4DFF66",
+  "0 0 8px #4ADE80, 0 0 16px #4ADE8066",
+  "0 0 8px #A3E635, 0 0 16px #A3E63566",
+  "0 0 8px #22C55E, 0 0 16px #22C55E66",
 ] as const;
 
 const ambientBlobs = [
   {
     id: "ab1",
-    color: "#41C8FF",
+    color: "#4ADE80",
     size: 350,
     top: "-5%",
     left: "-8%",
@@ -177,7 +177,7 @@ const ambientBlobs = [
   },
   {
     id: "ab2",
-    color: "#7A4DFF",
+    color: "#22C55E",
     size: 300,
     top: "60%",
     left: "75%",
@@ -186,7 +186,7 @@ const ambientBlobs = [
   },
   {
     id: "ab3",
-    color: "#D84BFF",
+    color: "#A3E635",
     size: 250,
     top: "40%",
     left: "45%",
@@ -205,7 +205,7 @@ export default function WhyChoose() {
       className="py-24 px-6 relative overflow-hidden"
       style={{
         background:
-          "linear-gradient(180deg, transparent 0%, rgba(76,111,255,0.03) 50%, transparent 100%)",
+          "linear-gradient(180deg, transparent 0%, rgba(34,197,94,0.03) 50%, transparent 100%)",
       }}
     >
       {/* Animated background layer */}

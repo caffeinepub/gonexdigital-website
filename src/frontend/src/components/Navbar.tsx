@@ -26,7 +26,7 @@ export default function Navbar() {
           : "bg-[#0B0F1A]/80 backdrop-blur-sm"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-2.5 flex items-center justify-between">
         {/* Logo */}
         <a
           href="#home"
@@ -34,10 +34,9 @@ export default function Navbar() {
           className="flex items-center gap-2 group"
         >
           <img
-            src="/assets/uploads/whatsapp_image_2026-03-10_at_6.40.11_pm-019d1f2b-4ceb-75af-9623-6f6fef060e1a-1.jpeg"
+            src="/assets/uploads/untitled_design_8_-removebg-preview-picsart-aiimageenhancer-019d2b3a-9901-72fc-bd80-e0792a57c575-1.png"
             alt="Gonexdigital Logo"
-            className="h-10 w-10 rounded-full object-cover"
-            style={{ filter: "hue-rotate(145deg) saturate(1.2)" }}
+            className="h-10 w-auto object-contain"
           />
           <span className="text-white font-bold text-lg tracking-tight">
             Gonexdigital

@@ -4,19 +4,19 @@ import { useInView } from "../hooks/useInView";
 const portfolioItems = [
   {
     title: "Graphic Design",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600",
+    image: "/assets/generated/portfolio-graphic-design.dim_600x400.jpg",
   },
   {
     title: "Logo Design",
-    image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600",
+    image: "/assets/generated/portfolio-logo-design.dim_600x400.jpg",
   },
   {
     title: "Web Design",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600",
+    image: "/assets/generated/portfolio-web-design.dim_600x400.jpg",
   },
   {
     title: "App Development",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600",
+    image: "/assets/generated/portfolio-app-development.dim_600x400.jpg",
   },
 ];
 
@@ -214,7 +214,7 @@ export default function Stats() {
           </p>
           <h2 className="text-4xl font-black text-white">Portfolio</h2>
           <p className="text-[#A7B2C8] mt-3 text-base font-medium">
-            A glimpse into what we create. Full portfolio coming soon.
+            A glimpse into what we create.
           </p>
         </div>
 
@@ -238,9 +238,6 @@ export default function Stats() {
                 <h3 className="text-white font-bold text-base mb-1">
                   {item.title}
                 </h3>
-                <p className="text-[#41C8FF] text-xs font-semibold tracking-wide">
-                  Images coming soon
-                </p>
               </div>
             </div>
           ))}
