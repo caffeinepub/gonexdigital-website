@@ -7,7 +7,6 @@ interface Service {
   description: string;
   gradient: string;
   image?: string;
-  subItems?: string[];
 }
 
 const services: Service[] = [
@@ -23,15 +22,18 @@ const services: Service[] = [
         strokeWidth={2}
         aria-hidden="true"
       >
-        <circle cx="11" cy="11" r="8" />
-        <path strokeLinecap="round" d="M21 21l-4.35-4.35" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+        />
       </svg>
     ),
-    title: "SEO",
+    title: "Social Media Management",
     description:
-      "Dominate search rankings with data-driven SEO strategies that drive organic traffic and qualified leads to your business.",
-    gradient: "from-[#4ADE80] to-[#22C55E]",
-    image: "/assets/generated/seo-service.dim_800x500.jpg",
+      "Build an engaged community with content that resonates. We handle strategy, creation, and daily management.",
+    gradient: "from-[#4ADE80] to-[#84CC16]",
+    image: "/assets/generated/social-media-gym-engagement.dim_800x600.jpg",
   },
   {
     icon: (
@@ -70,18 +72,15 @@ const services: Service[] = [
         strokeWidth={2}
         aria-hidden="true"
       >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
-        />
+        <circle cx="11" cy="11" r="8" />
+        <path strokeLinecap="round" d="M21 21l-4.35-4.35" />
       </svg>
     ),
-    title: "Social Media Management",
+    title: "SEO",
     description:
-      "Build an engaged community with content that resonates. We handle strategy, creation, and daily management.",
-    gradient: "from-[#4ADE80] to-[#84CC16]",
-    image: "/assets/generated/social-media-gym-engagement.dim_800x600.jpg",
+      "Dominate search rankings with data-driven SEO strategies that drive organic traffic and qualified leads to your business.",
+    gradient: "from-[#4ADE80] to-[#22C55E]",
+    image: "/assets/generated/seo-service.dim_800x500.jpg",
   },
   {
     icon: (
@@ -158,16 +157,10 @@ const services: Service[] = [
       </svg>
     ),
     title: "Business Automation & Digital Setup",
-    description: "",
+    description:
+      "Gonexdigital automates your business with CRM, lead management, smart workflows, sales funnels, and real-time analytics.",
     gradient: "from-[#4ADE80] to-[#A3E635]",
     image: "/assets/generated/business-automation-service.dim_800x500.jpg",
-    subItems: [
-      "CRM Setup & Integration",
-      "Lead Management Systems",
-      "WhatsApp & Email Automation",
-      "Sales Funnel Setup",
-      "Analytics & Reporting Dashboard",
-    ],
   },
 ];
 
@@ -402,20 +395,6 @@ export default function Services() {
                 <p className="text-[#A7B2C8] text-sm font-medium leading-relaxed">
                   {service.description}
                 </p>
-              )}
-
-              {service.subItems && service.subItems.length > 0 && (
-                <ul className="mt-2 space-y-1.5">
-                  {service.subItems.map((item) => (
-                    <li
-                      key={item}
-                      className="flex items-center gap-2 text-[#A7B2C8] text-sm font-medium"
-                    >
-                      <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#4ADE80] to-[#22C55E] flex-shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
               )}
 
               {service.image && (

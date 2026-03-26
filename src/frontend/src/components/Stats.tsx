@@ -3,20 +3,21 @@ import { useInView } from "../hooks/useInView";
 
 const portfolioItems = [
   {
-    title: "Graphic Design",
-    image: "/assets/generated/portfolio-graphic-design.dim_600x400.jpg",
+    title: "Social Media Management",
+    image:
+      "/assets/generated/portfolio-social-media-management.dim_600x400.jpg",
   },
   {
-    title: "Logo Design",
-    image: "/assets/generated/portfolio-logo-design.dim_600x400.jpg",
+    title: "Ad Marketing",
+    image: "/assets/generated/portfolio-ad-marketing.dim_600x400.jpg",
   },
   {
-    title: "Web Design",
-    image: "/assets/generated/portfolio-web-design.dim_600x400.jpg",
+    title: "Graphic & Logo Design",
+    image: "/assets/generated/portfolio-graphic-logo-design.dim_600x400.jpg",
   },
   {
-    title: "App Development",
-    image: "/assets/generated/portfolio-app-development.dim_600x400.jpg",
+    title: "Web & App Development",
+    image: "/assets/generated/portfolio-web-app-development.dim_600x400.jpg",
   },
 ];
 

@@ -61,13 +61,13 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl lg:text-6xl font-black leading-tight text-white mb-6">
-            We Build <span className="gradient-text">Websites, Brands</span>{" "}
-            &amp; Digital Growth
+            From Clicks to Clients —{" "}
+            <span className="gradient-text">We Make It Happen.</span>
           </h1>
 
           <p className="text-[#A7B2C8] text-lg font-medium leading-relaxed mb-10 max-w-xl">
-            Gonexdigital helps businesses grow online through stunning design,
-            smart marketing, and powerful digital strategies.
+            Gonexdigital is a full-service digital growth agency specializing in
+            websites, ads &amp; branding.
           </p>
 
           <div className="flex flex-wrap gap-4">
