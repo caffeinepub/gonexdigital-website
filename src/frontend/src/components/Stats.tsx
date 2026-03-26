@@ -4,8 +4,7 @@ import { useInView } from "../hooks/useInView";
 const portfolioItems = [
   {
     title: "Social Media Management",
-    image:
-      "/assets/generated/portfolio-social-media-management.dim_600x400.jpg",
+    image: "/assets/uploads/image-019d2b8b-a70f-7630-bd43-b853d9965168-1.png",
   },
   {
     title: "Ad Marketing",
